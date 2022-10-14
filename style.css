@@ -1,0 +1,775 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+h3 {
+    font-size: 2.2rem;
+    color: #212529;
+}
+h4 {
+    font-size: 1.7rem;
+    color: #212529;
+}
+h5 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+}
+h6 {
+    font-size: 1.2rem;
+    color: #fff;
+}
+p {
+    font-size: 1rem;
+}
+
+/* ================================================================================ */
+/* ================================= Navbar SECTION ================================ */ 
+/* ================================================================================ */
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 3rem;
+    background: #222;
+    z-index: 10;
+} 
+
+.nav h4 {
+    color: #fff;
+}
+
+#item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#item li {
+    list-style: none;
+    padding-right: 2rem;
+}
+
+#item li a {
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#item li a:hover,
+#item .icons i:hover {
+    color: #ff5733;
+    cursor: pointer;
+}
+
+#item .icons i {
+    color: #fff;
+    padding-right: 30px;
+    font-weight: bolder;
+}
+
+#menu-bar {
+    color: #ff5733;
+    font-size: 1.5rem;
+    display: none;
+}
+
+/* ================================================================================ */
+/* ================================= Home SECTION ================================ */ 
+/* ================================================================================ */
+
+.back {
+    background-image: url(./images/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: -1;
+}
+
+.back .overlay {
+    background-color: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;;
+}
+
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.mid h5 {
+    color: #7f8c8d;
+    margin-bottom: 1.4rem;
+}
+
+.mid .btn {
+    margin-top: 2rem;
+}
+
+.mid .btn a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mid .btn a.simple {
+    color: #fff;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+}
+.mid .btn a.simple:hover {
+    color: #ff5733;
+}
+
+.mid .btn a.border {
+    color: #ff5733;
+    border: 1px solid #ff5733;
+    font-weight: 500;
+    padding: 0.9rem 1.6rem;
+    border-radius: 3px;
+}
+.mid .btn a.border:hover {
+    background: #fff;
+    border: 1px solid #fff;
+}
+
+/* ================================================================================ */
+/* ================================= Details SECTION ================================ */ 
+/* ================================================================================ */
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8rem 15rem;
+    background: #171819;
+}
+
+.details .one {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.details .one h2,
+.details .two h2 {
+    padding-bottom: 1.1rem;
+}
+
+.details .one h5{
+    padding-bottom: 1.2rem;
+}
+
+.details .one p{
+    color:#7f8c8d;
+    padding-bottom: 3rem;
+}
+
+.details .one a {
+    color: #fff;
+    background: #ff5733;
+    padding: 1rem 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.details .one a:hover{
+    background: #fff;
+    color: #ff5733;
+}
+.details .two {
+    width: 45%;
+    border-left: 1px solid #7f8c8d;
+    padding-left: 4rem;
+}
+
+.details .two p {
+    color: #7f8c8d;
+    margin-bottom: 0.8rem;
+}
+
+.details p.white {
+    color: #fff;
+}
+/* ================================================================================ */
+/* ================================= Trainers SECTION ================================ */ 
+/* ================================================================================ */
+
+.trainers {
+    background: #f9f9f9;
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainers .about {
+    width: 40%;
+}
+
+.trainers .about h2 {
+    padding-bottom: 1.8rem;
+    color: #212529;
+}
+
+.trainers .about p {
+    color: #7f8c8d;
+}
+
+.trainers .people {
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainers .people .card-trainer {
+    width: 45%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.trainers .people img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.trainers .people .name,
+.trainers .people .pro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-details {
+    padding: 5px 20px 0.8rem 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.trainers .people i {
+    cursor: pointer;
+    color: #212529;
+}
+
+.trainers .people p {
+    color:#212529;
+}
+
+/* ================================================================================ */
+/* ================================= Classes SECTION ================================ */ 
+/* ================================================================================ */
+
+.classes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 7rem 8rem;
+}
+
+.classes h5 {
+    color: #7f8c8d;
+    text-align: center;
+}
+
+.classes h3 {
+    font-weight: 700;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.classes .card-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.classes .card-section .card-class {
+    width: 32%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+                6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+                12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+                22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+                41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+                100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.classes .card-section img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.classes .card-section p {
+    color:#212529;
+}
+
+.classes .card-section p .bold {
+    font-weight: 700;
+}
+
+.classes .card-details .card-details-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.8rem;
+}
+
+.value {
+    background: #ff5733;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classes .card-section .description p{
+    color: #7f8c8d;
+    text-align: left;
+}
+
+/* ================================================================================ */
+/* ================================= Contact SECTION ================================ */ 
+/* ================================================================================ */
+
+.contact-section {
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 
+
+.form-section {
+    width: 45%;
+}
+
+.form-section h3,
+.map-section h3 {
+    padding-bottom: 0.8rem;
+}
+
+.form-section .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input,
+.form textarea {
+    border: 1px solid #7f8c8d;
+    padding: 0.7rem;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #7f8c8d;
+}
+
+.form a {
+    width: 100%;
+    padding: 15px 0;
+    text-decoration: none;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    margin-top: 13px 0;
+}
+
+.map-section {
+    width: 45%;
+}
+
+.map-section iframe {
+    width: 100%;
+}
+
+.map-section p {
+    padding-bottom: 10px;
+}
+
+.map-section p i {
+    margin-top: 10px;
+    color: #ff5733;
+}
+
+/* ================================================================================ */
+/* ================================= Footer SECTION ================================ */ 
+/* ================================================================================ */
+
+footer {
+    margin-bottom: 1rem;
+}
+
+footer > p {
+    color: #7f8c8d;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #7f8c8d;
+}
+
+.footer a:hover {
+    color: #ff5733;
+}
+
+/* ================================================================================ */
+/* ================================= MEDIA QUERIES ================================ */ 
+/* ================================================================================ */
+
+@media screen and (max-width: 1042px) {
+    h1 {
+        font-size: 2.7rem;
+    }
+    h2 {
+        font-size: 2.2rem;
+    }
+    h3 {
+        font-size: 1.6rem;  
+    }
+    h4 {
+        font-size: 1.4rem;
+    }
+    h5 {
+        font-size: 1.2em;
+    }
+    h6 {
+        font-size: 1.1rem;
+    }
+    
+    #item li {
+        padding-right: 1rem;
+    }
+    #item .icons i {
+        padding-right: 20px;
+    }
+
+    .back {
+        background-position: center;
+    }
+
+    .details {
+        padding: 6rem 7rem;
+    }
+    .details .one {
+        width: 50%;
+    }
+    .details .one h2,
+    .details .two h2 {
+        padding-bottom: 1rem;
+    }
+    .details .one a {
+        font-size: 0.9rem;
+        padding: 1rem 0;
+    }
+    .details .two {
+        padding-left: 3.5rem;
+    }
+    .details .two p {
+        margin-bottom: 0.6rem;
+    }
+
+    .trainers {
+        padding: 6rem 7rem;
+    }
+    .trainers .about h2 {
+        padding-bottom: 1.4rem;
+    }  
+    .trainers .people .card-trainer {
+        width: 48%;
+    }
+    .card-details {
+        padding: 5px 15px 0 15px;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .trainers .people i {
+        font-size: 1rem;
+    }
+
+    .classes { 
+        padding: 6rem;
+    }
+    .classes p{
+        font-size: 0.9rem;
+        padding-bottom: 4px;
+    }
+    .classes .card-details .card-details-main{
+        padding-bottom: 7px;
+    }
+
+
+    .contact-section {
+        padding: 6rem;
+    }     
+    .form-section h3,
+    .map-section h3 {
+        padding-bottom: 7px;
+    }
+    .form a {
+        font-size: 1rem;
+        margin-top: 10px 0;
+    }
+    .map-section p {
+        padding-bottom: 8px;
+    }
+
+    footer > p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    h5 {
+        font-size: 1.1rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+
+    #item {
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 15;
+        margin-top: 4rem;
+        transition: 0.5s;
+    }
+    #item li {
+        padding: 4px 0;
+    }
+    #item li a {
+        font-size: 1.1rem;
+    }
+    #item .icons {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #item .icons i {
+        padding: 0 15px;
+    }
+    #menu-bar {
+        display: initial;
+        cursor: pointer;
+    }
+
+    .mid p{
+        margin-bottom: 1.2rem;
+    }
+    .mid .btn {
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+    .mid .btn a.simple,
+    .mid .btn a.border {
+        padding: 0.7rem 1.4rem;
+    }
+
+    .details {
+        padding: 6rem 6rem;
+    }
+
+    .trainers {
+        padding: 3rem;
+    }   
+    .trainers .people {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .trainers .people .card-trainer {
+        width: 60%;
+    }
+    .card-details {
+        padding: 2px 5px 2px 5px;
+    }
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .contact-section {
+        padding: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 496px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3 {
+        font-size: 1.4rem;  
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    h5 {
+        font-size: 0.9rem;
+    }
+    h6 {
+        font-size: 0.8rem;
+    }
+    p {
+        font-size: 0.75rem;
+    }
+
+    .mid {
+        padding: 0 10px;
+    }
+    .mid .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .details {
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .details .one {
+        width: 70%;
+    }
+    .details .one a {
+        padding: 1rem 0;
+        margin-bottom: 20px;
+    }
+    .details .two {
+        width: 70%;
+        border-top: 1px solid #7f8c8d;
+        border-left: 0;
+        padding: 10px 0;
+    }
+
+    .trainers {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .trainers .about {
+        width: 70%;
+    }
+    
+    .trainers .about h3 {
+        padding-bottom: 1.5rem;
+    }
+    
+    .trainers .people {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .classes {
+        padding: 2rem;
+    }
+    .classes h3 {
+        padding-bottom: 30px;
+    }
+    .classes .card-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .classes .card-section .card-class {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-section {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    } 
+    .form-section {
+        width: 70%;
+    }
+
+    .map-section {
+        width: 70%;
+    }
+    
+}
