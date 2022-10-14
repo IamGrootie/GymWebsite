@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Gym Studio</title>
 </head>
 <body>
     <nav class="nav">
         <h4>Yurban Hub Studio</h4>
         <ul id="item">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Classes</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#contact">Contact</a></li>
             <div class="icons">
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
@@ -26,7 +27,7 @@
         <i class="fa-solid fa-bars" id="menu-bar"></i>
     </nav>
 
-    <div class="back">
+    <div class="back" id="home">
         <div class="overlay"></div>
     </div>
 
@@ -39,14 +40,14 @@
         </div>
     </div>
 
-    <div class="details">
-        <div class="one">
+    <div class="details" >
+        <div class="one" data-aos="fade-up">
             <h2>New to Yurban?</h2>
             <h5>Your membership is up to 2 months FREE (50€ per month)</h5>
             <p>Yurban is a HTML template for a gym commercial website.</p>
             <a href="#">Become a member today</a>
         </div>
-        <div class="two">
+        <div class="two" data-aos="fade-up">
             <h2>Working Hours</h2>
             <br>
             <p class="white">Sunday: </p>
@@ -56,8 +57,8 @@
         </div>
     </div>
 
-    <div class="trainers">
-        <div class="about">
+    <div class="trainers" id="about" >
+        <div class="about" data-aos="fade-right">
             <h2>Hello, we are team Yurban</h2>
             <p>A personal trainer is an individual who has earned a certification that demonstrates they have
                 achieved a level of competency for creating and delivering safe and effective
@@ -68,7 +69,7 @@
                 by their skills. Come meet them
             </p>
         </div>
-        <div class="people">
+        <div class="people" data-aos="fade-left">
             <div class="card-trainer">
                 <div class="img">
                     <img src="./images/team1.jpg"    alt="picture of a trainer">
@@ -102,10 +103,10 @@
         </div>
     </div>
 
-    <div class="classes">
-        <h5>Get a Perfect Body</h5>
-        <h3>Our Training Classes</h3>
-        <div class="card-section">
+    <div class="classes" id="classes">
+        <h5 data-aos="fade-up">Get a Perfect Body</h5>
+        <h3 data-aos="fade-up">Our Training Classes</h3>
+        <div class="card-section" data-aos="fade-up">
             <div class="card-class card">
                 <div class="img">
                     <img src="./images/class1.jpg" alt="image of a yoga class"/>
@@ -173,8 +174,8 @@
     </div>
 
 
-    <div class="contact-section">
-        <div class="form-section">
+    <div class="contact-section" id="contact">
+        <div class="form-section" data-aos="fade-right">
             <h3>Contact us to request any information:</h3>
             <form class="form">
                 <input type="text" name="" placeholder="Insert your name">
@@ -183,7 +184,7 @@
                 <a href="#">Send message</a>
             </form>
         </div>
-        <div class="map-section">
+        <div class="map-section" data-aos="fade-left">
             <h3>Where you can find us</h3>
             <p><i class="fa-solid fa-location-pin"></i> Avenida Gustavo Eiffel, Porto</p>
             <p><i class="fa-solid fa-envelope"></i> yurban@email.com</p>
@@ -203,6 +204,13 @@
     </footer>
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
 </body>
 </html>
